@@ -7,10 +7,8 @@ functions = {}
 variables.name = "Tomek"
 
 functions.sayHello = function(event){
-    this.name = event.target.value
+    this.name = event.target.value;
 }
-
-
 
 /////////////////////
 new Vue({

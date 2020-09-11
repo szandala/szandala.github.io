@@ -9,13 +9,27 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <link rel="stylesheet" href="header.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 </head>
 
 <body>
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+
+
+
+
+
     <div id="app">
-        <input type="text" v-on:input="sayHello">
+        <input type="text" @input="sayHello">
         <p>{{ name }}</p>
 
     </div>
@@ -23,6 +37,13 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
 
+
+
+
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
 </body>
 
 </html>
